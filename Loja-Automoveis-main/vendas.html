@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importação de fontes e estilos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/materialize.css">
+    <link rel="stylesheet" href="CSS/vendas.css">
+
+    <title>Vendas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s11 offset-l1">
+                <h1 id="h1-vendas">XYZ</h1> <!-- Título da página de vendas -->
+            </div>
+        </div>
+
+        <form action="PHP/atualizacao.php" method="post"> <!-- Formulário para submissão dos dados de venda -->
+            <div class="row">
+                <div class="col s3 offset-l1">
+                    <p>Nome:</p> <!-- Campo para selecionar o nome do cliente -->
+                </div>
+
+                <div class="col s7">
+                    <select class="browser-default" id="nome-vendas" required > <!-- Lista suspensa para selecionar o nome do cliente -->
+                        <!-- Opções do nome do cliente serão preenchidas dinamicamente -->
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col s3 offset-l1">
+                    <p>Concessionária:</p> <!-- Campo para selecionar a concessionária -->
+                </div>
+
+                <div class="col s7">
+                    <select name="id" class="browser-default" id="conce-vendas" required> <!-- Lista suspensa para selecionar a concessionária -->
+                        <!-- Opções da concessionária serão preenchidas dinamicamente -->
+                    </select>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col s12">
+                    <button type="submit" class="btn-vendas">Confirmar</button> <!-- Botão para confirmar a venda -->
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="JS/materialize.js"></script>
+    <script src="JS/vendas.js"></script>
+</body>
+
+</html>
